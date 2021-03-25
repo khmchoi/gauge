@@ -1,0 +1,85 @@
+[
+  {
+    "input": "This is the worst I am so unhappy",
+    "output": "negative"
+  },
+  {
+    "input": "The rain is terrible and I don't want to go outside",
+    "output": "negative"
+  },
+  {
+    "input": "Doug hates cats and all sorts of animals",
+    "output": "negative"
+  },
+  {
+    "input": "I'm so exhausted by all the kardashian news and social media",
+    "output": "negative"
+  },
+  { "input": "I'm feeling sick and miserable!", "output": "negative" },
+  {
+    "input": "Can't wait to stop studying for this test!",
+    "output": "negative"
+  },
+  {
+    "input": "Can't sleep...my insomnia is kicking up again",
+    "output": "negative"
+  },
+  { "input": "I'm feeling worse than ever.", "output": "negative" },
+  { "input": "She seems a little distracted.", "output": "negative" },
+  { "input": "This behaviour is unacceptable.", "output": "negative" },
+  { "input": "Rober is feeling depressed.", "output": "negative" },
+  { "input": "Robert is in bad mood.", "output": "negative" },
+  { "input": "I'm feeling pity for the action.", "output": "negative" },
+  { "input": "We got in a fight", "output": "negative" },
+  { "input": "The outcome was very disappointing", "output": "negative" },
+  { "input": "Being sad and grumpy are unpleasant emotions", "output": "negative" },
+  { "input": "The world is a sad place", "output": "negative" },
+  { "input": "He felt pretty down about it", "output": "negative" },
+  { "input": "The outlook is pretty poor", "output": "negative" },
+  { "input": "I'm feeling really tired today", "output": "negative" },
+  { "input": "I'm feeling really blue", "output": "negative" },
+  { "input": "Sad, unhappy, failure, worried, anxious, concerned, tired are all examples of negative emotions", "output": "negative" },
+  { "input": "It feels like the world is falling apart", "output": "negative" },
+  { "input": "I feel sad and worried", "output": "negative" },
+  { "input": "I feel angry and upset", "output": "negative" },
+  {
+    "input": "This is the best, I am so happy",
+    "output": "positive"
+  },
+  {
+    "input": "The weather is so nice, can't wait to get outside!",
+    "output": "positive"
+  },
+  {
+    "input": "I love puppies and all animals!",
+    "output": "positive"
+  },
+  {
+    "input": "Dinner last night was amazing",
+    "output": "positive"
+  },
+  {
+    "input": "Can't believe we won the game!",
+    "output": "positive"
+  },
+  { "input": "What a pretty sunset", "output": "positive" },
+  {
+    "input": "Beautiful scenery makes me calmer and more at peace",
+    "output": "positive"
+  },
+  {
+    "input": "The concert was fantastic the performers are brilliant",
+    "output": "positive"
+  },
+  { "input": "I feel like I can climb a mountain", "output": "positive" },
+  { "input": "My mood has really improved", "output": "positive" },
+  { "input": "We're hopeful that his prognosis will get better", "output": "positive" },
+  { "input": "I'm in such a fantastic mood", "output": "positive" },
+  { "input": "Nothing can go wrong today", "output": "positive" },
+  { "input": "I'm really looking forward to what the day holds", "output": "positive" },
+  { "input": "Wearing rose colored glasses", "output": "positive" },
+  { "input": "What an awesome experience so glad we made it to the event", "output": "positive" },
+  { "input": "I am fabulous and fantasic happy and filled with joy", "output": "positive" },
+  { "input": "I'm feeling pretty great", "output": "positive" }
+
+]

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GAUGE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <!-- <script src='main.js'></script> -->
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="/public/style.css" type="text/css" />
+  </head>
+  <body class="#f3e5f5 purple lighten-5">
+    <div class="showcase container purple-text text-darken-4">
+      <h3>Hello <%= name %>!</h3>
+    </div>
+    <div class="container">
+      <form method="POST" action="/predict">
+        <label class="deep-purple-text text-lighten-2"
+          ><h4>Let's check in. How are you doing today?</h4></label
+        >
+        Include a few words to describe your mood
+        <input type="text" name="message" placeholder="I'm feeling great!" />
+        <input
+          type="submit"
+          value="Gauge"
+          class="btn #4a148c purple darken-4"
+        />
+      </form>
+    </div>
+  </body>
+</html>
