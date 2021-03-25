@@ -5,7 +5,6 @@ const activities = require('./recs')
 // ML:
 const brain = require ('brain.js')
 const data = require('./sentimentData.json');
-const recs = require('./recs');
 
 const network = new brain.recurrent.LSTM();
 
@@ -15,7 +14,7 @@ const trainingData = data.map(item => ({
 }));
 
 network.train(trainingData, {
-  iterations: 30,
+  iterations: 10,
   // errorThresh: 0.019,
   log: (status) => console.log(status)
 });
@@ -47,7 +46,6 @@ app.post('/getStarted', urlencodedParser, function (req, res) {
 })
 
 app.post('/predict', urlencodedParser, function (req, res) {
-  // console.log(req.body.message)
   console.log(req.body.message)
   const result = network.run(req.body.message) // runs user input through model;
   console.log(`sentiment: ${result}`)

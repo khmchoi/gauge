@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>GAUGE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <!-- <script src='main.js'></script> -->
     <!-- Compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -15,15 +15,8 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- <link rel="stylesheet" href="./index.css"> -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Quicksand:300,500"
-      rel="stylesheet"
-    />
-
     <link rel="stylesheet" href="/public/style.css" type="text/css" />
   </head>
-
   <body class="#f3e5f5 purple lighten-5">
     <div class="showcase container purple-text text-darken-4">
       <h2>Gauge</h2>
@@ -31,40 +24,37 @@
       <h4>You said: <%= myData %></h4>
     </div>
     <div class="showcase container deep-purple-text text-lighten-2">
-      <% if( resultData === "positive") { %>
-      <h4>Glad to hear it!</h4>
-      <h5>Here are some ideas to help you have an even better day</h5>
-      <% } %> <% if( resultData === "negative") { %>
-      <h4>I'm sorry to hear that you're feeling a little blue today</h4>
+      <% if (resultData === "positive") { %>
+        <h4>Glad to hear it!</h4> <% } %>
+      <% if (resultData === "negative") { %>
+        <h4>I'm sorry to hear that you're feeling a little blue today</h4> <%} %>
       <div>
-        <h5>Here are some ideas to help you have a better day</h5>
-        <% } %> <div class=>
+        <h5>Here are some ideas to help your day:</h5>
         <div class="row">
           <% for (let activity of activities) { %>
-          <div class="col s4">
-            <div class="card">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="<%" ="activity.imageUrl" % /> >
-              </div>
-              <div class="card-content">
-                <span
-                  class="card-title activator purple-text text-darken-4 center-align"
-                  ><%= activity.name %></span
-                >
-                <!-- <p><a href="#">This is a link</a></p> -->
-              </div>
-              <div class="card-reveal">
-                <span class="card-title purple-text text-darken-4"
-                  ><%= activity.subtext %></span
-                >
-                <p><%= activity.description %></p>
+            <div class="col s4">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src= <%= activity.imageUrl %>/>
+                </div>
+                <div class="card-content">
+                  <span
+                    class="card-title activator purple-text text-darken-4 center-align"
+                    ><%= activity.name %></span
+                  >
+                  <!-- <p><a href="#">This is a link</a></p> -->
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title purple-text text-darken-4"
+                    ><%= activity.subtext %></span
+                  >
+                  <p><%= activity.description %></p>
+                </div>
               </div>
             </div>
-          </div>
-          <% } %>
+            <% } %>
         </div>
       </div>
-
       <form method="GET" action="/">
         <input
           type="submit"
