@@ -1,6 +1,6 @@
 const express = require ('express');
 const bodyParser = require ('body-parser');
-const activities = require('./recs')
+const activities = require('./activities')
 
 // ML:
 const brain = require ('brain.js')

@@ -35,11 +35,11 @@ body {
 
  .card {
    border-radius: 10px;
+   background-color: #e1bee7;
  }
  .card-image {
   border-radius: 10px;
 }
-
 form {
   margin-top: 50px
 }

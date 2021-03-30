@@ -29,13 +29,13 @@
       <% if (resultData === "negative") { %>
         <h4>I'm sorry to hear that you're feeling a little blue today</h4> <%} %>
       <div>
-        <h5>Here are some ideas to help your day:</h5>
+        <h5>Here are some ideas to make it an even better day:</h5>
         <div class="row">
           <% for (let activity of activities) { %>
             <div class="col s4">
               <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src= <%= activity.imageUrl %>/>
+                  <img class="activator" src= "<%= activity.imageUrl %>"/>
                 </div>
                 <div class="card-content">
                   <span

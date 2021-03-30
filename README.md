@@ -1,17 +1,12 @@
-# Links:
-https://www.youtube.com/watch?v=BmP7mhW-HVU&feature=emb_logo
-
-https://medium.com/@atingenkay/getting-started-with-ejs-28fe4a693e53
-
-https://jcharistech.wordpress.com/2018/09/25/embedding-machine-learning-in-express-js/
-
-https://colah.github.io/posts/2015-08-Understanding-LSTMs/
-
+# Hello World
+Welcome to Gauge, your daily mindfulness assistant powered by machine learning through Brain.js. Gauge asks you to take a minute out of your day in order to check-in wth yourself and offers up suggested activities to help empower the rest of your day.
 
 # Tech stack:
-- BE: Node.js, Express Server
-- FE: EJS, Materialize CSS
-- ML: Brain.js
+- Front End: EJS, Materialize CSS
+- Back End: Node.js, Express
+- Machine Learning: Brain.js
 
 # Get Started:
+- npm install
 - Run nodemon app.js
+- Get gauging!
