@@ -2,7 +2,7 @@ const express = require ('express');
 const bodyParser = require ('body-parser');
 const activities = require('./activities')
 
-// ML:
+// MODEL:
 const brain = require ('brain.js')
 const data = require('./sentimentData.json');
 
@@ -47,7 +47,8 @@ app.post('/getStarted', urlencodedParser, function (req, res) {
 
 app.post('/predict', urlencodedParser, function (req, res) {
   console.log(req.body.message)
-  const result = network.run(req.body.message) // runs user input through model;
+  // runs user input through model;
+  const result = network.run(req.body.message)
   console.log(`sentiment: ${result}`)
   res.render('results', {
     myData: req.body.message,
@@ -60,7 +61,4 @@ const PORT = 3000
 app.listen(PORT, function() {
   console.log(`listening on port ${PORT}`)
 })
-
-// const stats = network.train(trainingData);
-// console.log(stats)
 

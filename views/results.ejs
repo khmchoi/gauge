@@ -5,14 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>GAUGE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
-    <!-- <script src='main.js'></script> -->
     <!-- Compiled and minified CSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="/public/style.css" type="text/css" />
@@ -27,9 +24,9 @@
       <% if (resultData === "positive") { %>
         <h4>Glad to hear it!</h4> <% } %>
       <% if (resultData === "negative") { %>
-        <h4>I'm sorry to hear that you're feeling a little blue today</h4> <%} %>
+        <h4>I'm sorry to hear that</h4> <%} %>
       <div>
-        <h5>Here are some ideas to make it an even better day:</h5>
+        <h5>Here are some ideas to incorporate into your day:</h5>
         <div class="row">
           <% for (let activity of activities) { %>
             <div class="col s4">
