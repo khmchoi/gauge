@@ -14,7 +14,7 @@ const trainingData = data.map(item => ({
 }));
 
 network.train(trainingData, {
-  iterations: 10,
+  iterations: 300,
   // errorThresh: 0.019,
   log: (status) => console.log(status)
 });
